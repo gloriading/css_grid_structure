@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 60px auto;
+}
+
+nav {
+  border-bottom: thin solid lightgray;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 250px auto;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  border-right: thin solid lightgray;
+  overflow: auto;
+}
+
+.content {
+  overflow: auto;
+}
+
+/* The following is just some effort to make the content large enough to show scrollbar */
+.sidebar p {
+  padding: 3rem 1rem;
+}
+.content p {
+  margin-bottom: 500px;
+}
+.content p:last-of-type {
+  margin-bottom: 50px;
+}
